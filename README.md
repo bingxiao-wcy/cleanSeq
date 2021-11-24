@@ -1,5 +1,5 @@
 # cleanSeq
-test version
+* test version
 install source code
 bulid python environment
 conda create -n cleanSeq python==3.8
