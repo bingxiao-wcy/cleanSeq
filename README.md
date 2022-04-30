@@ -59,4 +59,4 @@ command: cleanSeq command: python cleanSeq.py reference.fa raw1.fq.gz raw2.fq.gz
 * outptut result: https://github.com/bingxiao-wcy/cleanSeq/blob/main/output.rar
 
 
-
+* author contact: bingxiao_m@163.com, thanks for you message
