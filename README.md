@@ -29,9 +29,9 @@ python cleanSeq.py reference.fa raw1.fq.gz raw2.fq.gz ntPath
 ```
 
 ## or download binary 
-This binary is only for Linux systems: http://opengene.org/MutScan/mutscan
+This binary is only for Linux systems: 
+link: https://pan.baidu.com/s/1hn277ozXEBKcvTlhGBBDbw  extract code: cxgf
 ```shell
-wget http://opengene.org/MutScan/mutscan
 chmod a+x ./cleanSeq
 ```
 
