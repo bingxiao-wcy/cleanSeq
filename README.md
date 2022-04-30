@@ -1,5 +1,5 @@
-# Get cleanSeq
-## dependence tool
+# prework
+## install dependence tool
 ```shell
 BWA v0.7.17-r1188
 Samtools v1.10
@@ -9,9 +9,15 @@ Clustal Omega v1.2.4
 FLASH v1.2.11
 trimmomatic v0.38
 ```
-## Execute from source code
+
+## bulid ntdatabase
 ```shell
-# bulid python environment.
+blast database link: https://ftp.ncbi.nih.gov/blast/db/FASTA/
+blast makeblast command for bulid blastdb: "makeblastdb -dbtype nucl -in ntdatabase -input_type fasta -out nt.blastdb -parse_seqids"
+note: raw nt database contain 'N' characters, please remove it before using 'makeblastdb' command bulid blast database
+```
+## bulid python environment (if you choose run cleanSeq.py)
+```shell
 conda create -n cleanSeq python==3.8
 conda activate cleanSeq
 conda install -c conda-forge biopython (v:1.79)
@@ -22,33 +28,30 @@ conda install -c anaconda requests (v:2.24.0)
 conda install -c anaconda openpyxl (v:3.0.5)
 conda install -c conda-forge matplotlib (v:3.2.2)
 conda install -c anaconda xlrd (v:1.79)
-```
-* Command to test
-```shell
-python cleanSeq.py reference.fa raw1.fq.gz raw2.fq.gz ntPath
-```
 
-## or download binary 
+
+# Get cleanSeq
+## download binary 
 This binary is only for Linux systems: 
 link: https://pan.baidu.com/s/1hn277ozXEBKcvTlhGBBDbw  
 extract code: cxgf
 ```shell
 chmod a+x ./cleanSeq
-```
-
-* Command to test
-```shell
 ./cleanSeq reference.fa raw1.fq.gz raw2.fq.gz ntPath
 ```
+## download cleanSeq.py 
 
+```shell
+download link: 
+python cleanSeq.py reference.fa raw1.fq.gz raw2.fq.gz ntPath
+```
+## test cleanSeq
 # example
-* TestData download:https://pan.baidu.com/s/1NNxzAXQZNM5ZEP_NomNw4w 
+* TestData download: https://pan.baidu.com/s/1NNxzAXQZNM5ZEP_NomNw4w 
 * extract code: 8vsk
 ```shell
-test command
-./CleanSeq Ecoli.fasta EcoliPsu.read1.fastq EcoliPsu.read2.fastq nt.blastdb -identity 90
+run command: ./CleanSeq Escherichia_coli.fasta EcoliPsu.read1.fastq EcoliPsu.read2.fastq nt.blastdb -identity 90
 ```
-* 
 * test outptut report: https://github.com/bingxiao-wcy/cleanSeq/blob/main/Report.pdf
 
 
