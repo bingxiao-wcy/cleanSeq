@@ -52,7 +52,7 @@ cleanSeq command: python cleanSeq.py reference.fa raw1.fq.gz raw2.fq.gz ntPath
   * download: https://pan.baidu.com/s/1NNxzAXQZNM5ZEP_NomNw4w 
   * extract code: 8vsk
 * run command: ./CleanSeq Escherichia_coli.fasta EcoliPsu.read1.fastq EcoliPsu.read2.fastq nt.blastdb -identity 90
-* outptut: https://github.com/bingxiao-wcy/cleanSeq/blob/main/Report.pdf
+* outptut: https://github.com/bingxiao-wcy/cleanSeq/blob/main/output.rar
 
 
 
