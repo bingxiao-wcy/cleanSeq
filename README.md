@@ -41,8 +41,8 @@ chmod a+x ./cleanSeq
 ```
 
 # Take a quick glance
-* Sample PDF report: http://opengene.org/MutScan/report.html
-* Dataset for testing: http://opengene.org/dataset.html
+* Sample PDF report: https://github.com/bingxiao-wcy/cleanSeq/blob/main/Report.pdf
+* Dataset for testing: http:
 
 
 
