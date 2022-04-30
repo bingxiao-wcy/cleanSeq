@@ -1,3 +1,6 @@
+# cleanSeq
+* cleanSeq is a bioinformatic tool for contamination detection, contamination removal, mutation detection, and mutation verification.
+
 # prework
 ## step1: install dependence tool
 ```shell
