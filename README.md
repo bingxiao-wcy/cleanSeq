@@ -30,7 +30,8 @@ python cleanSeq.py reference.fa raw1.fq.gz raw2.fq.gz ntPath
 
 ## or download binary 
 This binary is only for Linux systems: 
-link: https://pan.baidu.com/s/1hn277ozXEBKcvTlhGBBDbw  extract code: cxgf
+link: https://pan.baidu.com/s/1hn277ozXEBKcvTlhGBBDbw  
+extract code: cxgf
 ```shell
 chmod a+x ./cleanSeq
 ```
@@ -40,9 +41,15 @@ chmod a+x ./cleanSeq
 ./cleanSeq reference.fa raw1.fq.gz raw2.fq.gz ntPath
 ```
 
-# Take a quick glance
-* Sample PDF report: https://github.com/bingxiao-wcy/cleanSeq/blob/main/Report.pdf
-* Dataset for testing: http:
+# example
+* TestData download:https://pan.baidu.com/s/1NNxzAXQZNM5ZEP_NomNw4w 
+* extract code: 8vsk
+```shell
+test command
+./CleanSeq Ecoli.fasta EcoliPsu.read1.fastq EcoliPsu.read2.fastq nt.blastdb -identity 90
+```
+* 
+* test outptut report: https://github.com/bingxiao-wcy/cleanSeq/blob/main/Report.pdf
 
 
 
