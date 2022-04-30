@@ -34,17 +34,21 @@ conda install -c anaconda xlrd (v:1.79)
 # Get cleanSeq
 ## download binary 
 * This binary is only for Linux systems: 
- * link: https://pan.baidu.com/s/1hn277ozXEBKcvTlhGBBDbw  
- * extract code: cxgf
+  * download: https://pan.baidu.com/s/1hn277ozXEBKcvTlhGBBDbw  
+  * extract code: cxgf
 
 ```shell
+command:
 chmod a+x ./cleanSeq
 ./cleanSeq reference.fa raw1.fq.gz raw2.fq.gz ntPath
 ```
 
 ## or download cleanSeq.py (pre-bulid python environment)
+* only for Linux systems:
+    * download: https://github.com/bingxiao-wcy/cleanSeq/blob/main/cleanSeq.py
+
 ```shell
-download: https://github.com/bingxiao-wcy/cleanSeq/blob/main/cleanSeq.py
+command:
 cleanSeq command: python cleanSeq.py reference.fa raw1.fq.gz raw2.fq.gz ntPath
 ```
 
