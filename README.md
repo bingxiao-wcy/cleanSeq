@@ -12,8 +12,9 @@ trimmomatic v0.38
 
 ## step2: bulid ntdatabase
 ```shell
-blast database link: https://ftp.ncbi.nih.gov/blast/db/FASTA/
-blast makeblast command for bulid blastdb: "makeblastdb -dbtype nucl -in ntdatabase -input_type fasta -out nt.blastdb -parse_seqids"
+download blast database: https://ftp.ncbi.nih.gov/blast/db/FASTA/
+bulid blastdb: "makeblastdb -dbtype nucl -in ntdatabase -input_type fasta -out nt.blastdb -parse_seqids"
+
 note: raw nt database contain 'N' characters, please remove it before using 'makeblastdb' command bulid blast database
 ```
 ## step3: bulid python environment (if you choose run cleanSeq.py)
@@ -32,17 +33,18 @@ conda install -c anaconda xlrd (v:1.79)
 
 # Get cleanSeq
 ## download binary 
-This binary is only for Linux systems: 
-link: https://pan.baidu.com/s/1hn277ozXEBKcvTlhGBBDbw  
-extract code: cxgf
+* This binary is only for Linux systems: 
+ * link: https://pan.baidu.com/s/1hn277ozXEBKcvTlhGBBDbw  
+ * extract code: cxgf
+
 ```shell
 chmod a+x ./cleanSeq
 ./cleanSeq reference.fa raw1.fq.gz raw2.fq.gz ntPath
 ```
-## or download cleanSeq.py (pre-bulid python environment)
 
+## or download cleanSeq.py (pre-bulid python environment)
 ```shell
-download link: https://github.com/bingxiao-wcy/cleanSeq/blob/main/cleanSeq.py
+download: https://github.com/bingxiao-wcy/cleanSeq/blob/main/cleanSeq.py
 cleanSeq command: python cleanSeq.py reference.fa raw1.fq.gz raw2.fq.gz ntPath
 ```
 
@@ -52,7 +54,7 @@ cleanSeq command: python cleanSeq.py reference.fa raw1.fq.gz raw2.fq.gz ntPath
   * download: https://pan.baidu.com/s/1NNxzAXQZNM5ZEP_NomNw4w 
   * extract code: 8vsk
 * run command: ./CleanSeq Escherichia_coli.fasta EcoliPsu.read1.fastq EcoliPsu.read2.fastq nt.blastdb -identity 90
-* outptut: https://github.com/bingxiao-wcy/cleanSeq/blob/main/output.rar
+* outptut result: https://github.com/bingxiao-wcy/cleanSeq/blob/main/output.rar
 
 
 
