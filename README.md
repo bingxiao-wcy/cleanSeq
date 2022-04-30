@@ -1,5 +1,5 @@
 # prework
-## install dependence tool
+## step1: install dependence tool
 ```shell
 BWA v0.7.17-r1188
 Samtools v1.10
@@ -10,13 +10,13 @@ FLASH v1.2.11
 trimmomatic v0.38
 ```
 
-## bulid ntdatabase
+## step2: bulid ntdatabase
 ```shell
 blast database link: https://ftp.ncbi.nih.gov/blast/db/FASTA/
 blast makeblast command for bulid blastdb: "makeblastdb -dbtype nucl -in ntdatabase -input_type fasta -out nt.blastdb -parse_seqids"
 note: raw nt database contain 'N' characters, please remove it before using 'makeblastdb' command bulid blast database
 ```
-## bulid python environment (if you choose run cleanSeq.py)
+## step3: bulid python environment (if you choose run cleanSeq.py)
 ```shell
 conda create -n cleanSeq python==3.8
 conda activate cleanSeq
@@ -28,7 +28,7 @@ conda install -c anaconda requests (v:2.24.0)
 conda install -c anaconda openpyxl (v:3.0.5)
 conda install -c conda-forge matplotlib (v:3.2.2)
 conda install -c anaconda xlrd (v:1.79)
-
+```
 
 # Get cleanSeq
 ## download binary 
@@ -39,20 +39,20 @@ extract code: cxgf
 chmod a+x ./cleanSeq
 ./cleanSeq reference.fa raw1.fq.gz raw2.fq.gz ntPath
 ```
-## download cleanSeq.py 
+## or download cleanSeq.py (pre-bulid python environment)
 
 ```shell
-download link: 
-python cleanSeq.py reference.fa raw1.fq.gz raw2.fq.gz ntPath
+download link: https://github.com/bingxiao-wcy/cleanSeq/blob/main/cleanSeq.py
+cleanSeq command: python cleanSeq.py reference.fa raw1.fq.gz raw2.fq.gz ntPath
 ```
-## test cleanSeq
-# example
-* TestData download: https://pan.baidu.com/s/1NNxzAXQZNM5ZEP_NomNw4w 
-* extract code: 8vsk
-```shell
-run command: ./CleanSeq Escherichia_coli.fasta EcoliPsu.read1.fastq EcoliPsu.read2.fastq nt.blastdb -identity 90
-```
-* test outptut report: https://github.com/bingxiao-wcy/cleanSeq/blob/main/Report.pdf
+
+# test cleanSeq
+## example
+* get TestData 
+  * download: https://pan.baidu.com/s/1NNxzAXQZNM5ZEP_NomNw4w 
+  * extract code: 8vsk
+* run command: ./CleanSeq Escherichia_coli.fasta EcoliPsu.read1.fastq EcoliPsu.read2.fastq nt.blastdb -identity 90
+* outptut: https://github.com/bingxiao-wcy/cleanSeq/blob/main/Report.pdf
 
 
 
