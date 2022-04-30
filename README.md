@@ -1,13 +1,13 @@
 # prework
 ## step1: install dependence tool
 ```shell
-BWA v0.7.17-r1188
-Samtools v1.10
-GATK v4.1.8.1
-BLAST+ v1.12.0+
-Clustal Omega v1.2.4
-FLASH v1.2.11
-trimmomatic v0.38
+BWA (v0.7.17-r1188)
+Samtools (v1.10)
+GATK (v4.1.8.1)
+BLAST+ (v1.12.0+)
+Clustal Omega (v1.2.4)
+FLASH (v1.2.11)
+trimmomatic (v0.38)
 ```
 
 ## step2: bulid ntdatabase
